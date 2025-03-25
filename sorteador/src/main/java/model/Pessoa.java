@@ -1,6 +1,6 @@
 package model;
 
-import java.time.LocalDate;
+import java.util.List;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -9,17 +9,11 @@ import lombok.*;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Ticket {
+public class Pessoa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(unique = true)
-    private int numero;
-
-    private LocalDate dataAquisicao;
-
-    @ManyToOne
-    private Pessoa pessoa;
+    private String nome;
 }
