@@ -3,7 +3,7 @@
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication  // Anotação para configurar a aplicação Spring Boot
+@SpringBootApplication
 public class SorteadorApplication {
 
     public static void main(String[] args) {

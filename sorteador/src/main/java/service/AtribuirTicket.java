@@ -1,5 +1,6 @@
 package service;
 
+import lombok.RequiredArgsConstructor;
 import model.Pessoa;
 import model.Ticket;
 import java.time.LocalDate;
@@ -11,12 +12,11 @@ import repository.PessoaRepository;
 import repository.TicketRepository;
 
 @Service
-public class AtribuirTicket {
+@RequiredArgsConstructor
+public final class AtribuirTicket {
 
-    @Autowired
     private PessoaRepository pessoaRepository;
 
-    @Autowired
     private TicketRepository ticketRepository;
 
     public Ticket comprarBilhete(String nome) {
